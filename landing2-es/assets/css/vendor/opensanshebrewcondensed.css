@@ -1,0 +1,67 @@
+/*
+ * Open Sans Hebrew Condensed (Hebrew) http://www.google.com/fonts/earlyaccess
+ */
+
+ @font-face {
+  font-family: 'Open Sans Hebrew Condensed';
+  font-display: swap;
+  font-style: italic;
+  font-weight: 300;
+  src: url('../../fonts/OpenSansHebrewCondensed-LightItalic.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Open Sans Hebrew Condensed';
+  font-display: swap;
+  font-style: normal;
+  font-weight: 300;
+  src: url('../../fonts/OpenSansHebrewCondensed-Light.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Open Sans Hebrew Condensed';
+  font-display: swap;
+  font-style: italic;
+  font-weight: 400;
+  src: url('../../fonts/OpenSansHebrewCondensed-Italic.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Open Sans Hebrew Condensed';
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+  src: url('../../fonts/OpenSansHebrewCondensed-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Open Sans Hebrew Condensed';
+  font-display: swap;
+  font-style: italic;
+  font-weight: 700;
+  src: url('../../fonts/OpenSansHebrewCondensed-BoldItalic.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Open Sans Hebrew Condensed';
+  font-display: swap;
+  font-style: normal;
+  font-weight: 700;
+  src: url('../../fonts/OpenSansHebrewCondensed-Bold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Open Sans Hebrew Condensed';
+  font-display: swap;
+  font-style: italic;
+  font-weight: 800;
+  src: url('../../fonts/OpenSansHebrewCondensed-ExtraBoldItalic.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Open Sans Hebrew Condensed';
+  font-display: swap;
+  font-style: normal;
+  font-weight: 800;
+  src: url('../../fonts/OpenSansHebrewCondensed-ExtraBold.woff2') format('woff2');
+}

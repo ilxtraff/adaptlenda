@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Happy Joints Kitchen</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--cream:#FBF3E4;--cream2:#F4E6CC;--gold:#E3A21A;--gold2:#F2C14E;--green:#2F5D50;--terra:#C8643B;--ink:#2B2A26;--brown:#7A4A26}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#ddd;font-family:Nunito,Arial,sans-serif;color:var(--ink);padding:40px;display:flex;flex-direction:column;gap:40px;align-items:flex-start}
+.scene{position:relative;overflow:hidden;background:var(--cream)}
+.serif{font-family:"Playfair Display",Georgia,serif}
+
+/* AVATAR */
+#avatar{width:1080px;height:1080px;background:radial-gradient(circle at 50% 45%,#FFF8EA 0,var(--cream) 55%,var(--cream2) 100%)}
+#avatar .ring{position:absolute;inset:40px;border-radius:50%;border:14px solid var(--green)}
+#avatar .ring2{position:absolute;inset:74px;border-radius:50%;border:3px dashed var(--gold)}
+#avatar svg.arc{position:absolute;inset:0}
+#avatar .ill{position:absolute;left:225px;top:265px;width:630px;height:540px}
+
+/* COVER */
+#cover{width:1640px;height:624px;background:linear-gradient(100deg,var(--cream) 0,var(--cream) 52%,var(--cream2) 100%)}
+#cover .txt{position:absolute;left:330px;top:120px;width:760px}
+#cover .kicker{font-weight:800;letter-spacing:4px;color:var(--terra);font-size:24px;text-transform:uppercase}
+#cover h1{font-size:92px;line-height:1;color:var(--green);margin:14px 0 18px}
+#cover p{font-size:31px;line-height:1.35;color:var(--brown)}
+#cover .ill{position:absolute;right:40px;top:40px;width:640px;height:550px}
+#cover .band{position:absolute;left:0;right:0;bottom:0;height:22px;background:repeating-linear-gradient(90deg,var(--green) 0 60px,var(--gold) 60px 120px)}
+
+/* POST */
+#post{width:1080px;height:1350px;background:var(--cream)}
+#post .top{height:560px;background:radial-gradient(circle at 50% 60%,#FFF6E2 0,var(--cream2) 70%);position:relative}
+#post .top .ill{position:absolute;left:220px;top:40px;width:640px;height:550px}
+#post .badge{position:absolute;left:50px;top:50px;background:var(--terra);color:#fff;font-weight:800;font-size:24px;letter-spacing:2px;padding:12px 22px;border-radius:40px;text-transform:uppercase}
+#post .time{position:absolute;right:50px;top:50px;background:#fff;color:var(--green);font-weight:800;font-size:24px;padding:12px 22px;border-radius:40px;border:3px solid var(--green)}
+#post .body{padding:40px 64px 0}
+#post h2{font-size:66px;line-height:1.05;color:var(--green)}
+#post h2 em{color:var(--gold);font-style:italic}
+#post .cols{display:flex;gap:44px;margin-top:30px}
+#post h3{font-size:25px;letter-spacing:3px;text-transform:uppercase;color:var(--terra);margin-bottom:12px}
+#post ul,#post ol{font-size:25px;line-height:1.45;padding-left:0;list-style:none}
+#post li{margin-bottom:8px;padding-left:34px;position:relative}
+#post ul li::before{content:"";position:absolute;left:4px;top:13px;width:14px;height:14px;border-radius:50%;background:var(--gold)}
+#post ol{counter-reset:s}
+#post ol li{counter-increment:s}
+#post ol li::before{content:counter(s);position:absolute;left:0;top:2px;width:26px;height:26px;border-radius:50%;background:var(--green);color:#fff;font-size:17px;font-weight:800;text-align:center;line-height:26px}
+#post .tip{margin:34px 64px 0;background:#fff;border:3px dashed var(--gold);border-radius:18px;padding:22px 28px;font-size:24px;line-height:1.45;color:var(--brown)}
+#post .tip b{color:var(--green)}
+#post .foot{position:absolute;left:0;right:0;bottom:0;height:86px;background:var(--green);color:#fff;display:flex;align-items:center;justify-content:space-between;padding:0 64px;font-size:26px;font-weight:800}
+#post .foot span{color:var(--gold2)}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <linearGradient id="milk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F7C948"/><stop offset="1" stop-color="#E39A12"/></linearGradient>
+    <linearGradient id="mug" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#2F5D50"/><stop offset=".55" stop-color="#3E7767"/><stop offset="1" stop-color="#264C42"/></linearGradient>
+    <linearGradient id="root" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#D98A2B"/><stop offset="1" stop-color="#A9621C"/></linearGradient>
+    <linearGradient id="ginger" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E9C88A"/><stop offset="1" stop-color="#C99B55"/></linearGradient>
+    <symbol id="golden" viewBox="0 0 700 600">
+      <!-- saucer -->
+      <ellipse cx="330" cy="530" rx="250" ry="42" fill="#E8D5B0"/>
+      <ellipse cx="330" cy="520" rx="250" ry="40" fill="#FFFDF7" stroke="#D9C39A" stroke-width="4"/>
+      <ellipse cx="330" cy="518" rx="150" ry="20" fill="#EFE3CB"/>
+      <!-- steam -->
+      <g fill="none" stroke="#C9B28C" stroke-width="10" stroke-linecap="round" opacity=".75">
+        <path d="M260 150c-30-35 30-55 0-95s25-50 10-70"/>
+        <path d="M335 140c-30-35 30-55 0-95s25-50 10-70"/>
+        <path d="M410 150c-30-35 30-55 0-95s25-50 10-70"/>
+      </g>
+      <!-- handle -->
+      <path d="M505 280c85-10 105 55 80 110-22 48-80 60-110 55" fill="none" stroke="#2F5D50" stroke-width="34" stroke-linecap="round"/>
+      <!-- mug body -->
+      <path d="M150 200h360l-28 270c-4 32-30 50-62 50H240c-32 0-58-18-62-50z" fill="url(#mug)"/>
+      <path d="M180 250h300" stroke="#E3A21A" stroke-width="10" stroke-linecap="round" opacity=".9"/>
+      <path d="M190 280h280" stroke="#F2C14E" stroke-width="5" stroke-linecap="round" opacity=".7" stroke-dasharray="4 16"/>
+      <!-- rim + milk -->
+      <ellipse cx="330" cy="200" rx="180" ry="36" fill="#264C42"/>
+      <ellipse cx="330" cy="202" rx="162" ry="27" fill="url(#milk)"/>
+      <path d="M270 200c20-12 40 8 60-2s40-10 58 2" fill="none" stroke="#FFF3D1" stroke-width="7" stroke-linecap="round"/>
+      <circle cx="305" cy="196" r="5" fill="#8A4B12"/><circle cx="360" cy="206" r="4" fill="#8A4B12"/><circle cx="385" cy="195" r="3.5" fill="#8A4B12"/>
+      <!-- heart on mug -->
+      <path d="M330 420c-50-32-72-60-60-86 10-22 42-24 60 0 18-24 50-22 60 0 12 26-10 54-60 86z" fill="#F2C14E"/>
+      <!-- cinnamon sticks -->
+      <g transform="translate(470 470) rotate(-18)">
+        <rect x="0" y="0" width="200" height="30" rx="14" fill="#8B4A22"/>
+        <rect x="6" y="6" width="188" height="8" rx="4" fill="#B2672F"/>
+        <rect x="10" y="30" width="190" height="26" rx="12" fill="#7A3E1C"/>
+      </g>
+      <!-- turmeric root -->
+      <g transform="translate(40 440)">
+        <path d="M10 60c10-30 60-40 100-30 30-25 70-20 80 5 10 22-10 45-45 45-30 20-90 25-120 10C10 85 5 75 10 60z" fill="url(#root)"/>
+        <path d="M40 58h40M95 44l14 12M140 50l10 14" stroke="#8C4E14" stroke-width="4" stroke-linecap="round"/>
+        <ellipse cx="185" cy="40" rx="18" ry="14" fill="#F2A21E"/>
+      </g>
+      <!-- ginger -->
+      <g transform="translate(535 535)">
+        <path d="M0 20c0-25 35-35 55-20 15-20 50-18 60 5 22-5 40 15 28 32-10 16-40 12-55 8-25 12-75 12-88-25z" fill="url(#ginger)"/>
+        <path d="M30 20h20M80 18l8 12" stroke="#A67B3C" stroke-width="3.5" stroke-linecap="round"/>
+      </g>
+      <!-- star anise -->
+      <g transform="translate(120 560)" fill="#6A3517">
+        <path d="M0-26 6-6 26 0 6 6 0 26-6 6-26 0-6-6z"/>
+        <path d="M0-26 6-6 26 0 6 6 0 26-6 6-26 0-6-6z" transform="rotate(45)"/>
+        <circle r="6" fill="#C98A4A"/>
+      </g>
+    </symbol>
+  </defs>
+</svg>
+
+<!-- ===== AVATAR 1080x1080 ===== -->
+<div id="avatar" class="scene">
+  <div class="ring"></div><div class="ring2"></div>
+  <svg class="arc" viewBox="0 0 1080 1080">
+    <defs>
+      <path id="arcTop" d="M190 540a350 350 0 0 1 700 0"/>
+      <path id="arcBot" d="M160 560a380 380 0 0 0 760 0"/>
+    </defs>
+    <text font-family="Playfair Display, Georgia, serif" font-weight="900" font-size="84" fill="#2F5D50" letter-spacing="6">
+      <textPath href="#arcTop" startOffset="50%" text-anchor="middle">HAPPY JOINTS</textPath>
+    </text>
+    <text font-family="Nunito, Arial, sans-serif" font-weight="800" font-size="46" fill="#C8643B" letter-spacing="14">
+      <textPath href="#arcBot" startOffset="50%" text-anchor="middle">· KITCHEN ·</textPath>
+    </text>
+  </svg>
+  <svg class="ill" viewBox="0 0 700 600"><use href="#golden"/></svg>
+</div>
+
+<!-- ===== COVER 1640x624 ===== -->
+<div id="cover" class="scene">
+  <div class="txt">
+    <div class="kicker">Recipes · Movement · Everyday tips</div>
+    <h1 class="serif">Happy Joints Kitchen</h1>
+    <p>Simple, tasty recipes and gentle habits for people who want to keep knees, hips, hands and back moving comfortably.</p>
+  </div>
+  <svg class="ill" viewBox="0 0 700 600"><use href="#golden"/></svg>
+  <div class="band"></div>
+</div>
+
+<!-- ===== POST 1080x1350 ===== -->
+<div id="post" class="scene">
+  <div class="top">
+    <div class="badge">Recipe of the week</div>
+    <div class="time">10 min · 1 cup</div>
+    <svg class="ill" viewBox="0 0 700 600"><use href="#golden"/></svg>
+  </div>
+  <div class="body">
+    <h2 class="serif">Golden Turmeric &amp; Ginger <em>Milk</em></h2>
+    <div class="cols">
+      <div style="flex:1">
+        <h3>You need</h3>
+        <ul>
+          <li>1 cup milk (or oat / almond)</li>
+          <li>1 tsp ground turmeric</li>
+          <li>1 cm fresh ginger, grated</li>
+          <li>¼ tsp cinnamon</li>
+          <li>A pinch of black pepper</li>
+          <li>1 tsp honey</li>
+        </ul>
+      </div>
+      <div style="flex:1.1">
+        <h3>How to make</h3>
+        <ol>
+          <li>Warm the milk in a small pot.</li>
+          <li>Whisk in turmeric, ginger, cinnamon and pepper.</li>
+          <li>Simmer gently for 5 minutes.</li>
+          <li>Strain, let cool a little, stir in honey.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <div class="tip"><b>Why black pepper?</b> It helps your body absorb curcumin, the natural compound that gives turmeric its golden colour. Enjoy it warm in the evening.</div>
+  <div class="foot"><div>Happy Joints <span>Kitchen</span></div><div>Save it for later ♥</div></div>
+</div>
+
+</body>
+</html>
